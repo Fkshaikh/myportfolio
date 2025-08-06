@@ -65,29 +65,12 @@ export default function ExperienceSection() {
     {
       id: 3,
       type: 'work',
-      title: 'Software Intern',
-      organization: 'Tech Holding',
-      period: 'Jan 2023 – Apr 2023',
-      location: 'Ahmedabad, India',
-      icon: '🚀',
-      color: '#f27a7d',
-      highlights: [
-        'Built automated HR onboarding/off-boarding system with Google SSO integration',
-        'Implemented AWS SES email integration for secure communication',
-        'Developed comprehensive REST APIs with detailed documentation',
-        'Gained hands-on experience with cloud-based development practices'
-      ],
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS SES', 'Google SSO'],
-    },
-    {
-      id: 4,
-      type: 'work',
       title: 'Jr. Software Engineer',
       organization: 'Tech Holding',
-      period: 'Apr 2023 – Aug 2024',
+      period: 'Jan 2023 – Aug 2024',
       location: 'Ahmedabad, India',
       icon: '💼',
-      color: '#c5f9d7',
+      color: '#f27a7d',
       highlights: [
         'Developed payment integration modules for CourseKey platform',
         'Built real-time analytics dashboards with interactive data visualization',
@@ -97,14 +80,14 @@ export default function ExperienceSection() {
       technologies: ['React', 'Redux', 'Node.js', 'Express', 'PostgreSQL', 'AWS'],
     },
     {
-      id: 5,
+      id: 4,
       type: 'work',
       title: 'Software Engineer',
       organization: 'Tech Holding',
       period: 'Aug 2024 – Present',
       location: 'Ahmedabad, India',
       icon: '⭐',
-      color: '#f7d486',
+      color: '#c5f9d7',
       highlights: [
         'Leading development of AI-powered automation solutions',
         'Architecting scalable backend systems for high-traffic applications',

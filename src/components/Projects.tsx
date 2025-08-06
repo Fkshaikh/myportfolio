@@ -24,13 +24,43 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
+      title: 'Vine Financial Platform',
+      subtitle: 'Multi-Tenant B2B Financial Platform',
+      description: 'Built a scalable multi-tenant B2B financial platform for banks and lenders, streamlining deal management, credit analysis, and loan origination through 8 microservices and real-time processing.',
+      technologies: ['Node.js', 'React/Vite', 'AWS Textract', 'Lambda', 'SQS', 'S3'],
+      category: 'FinTech',
+      icon: <IconRocket className="w-6 h-6" />,
+      color: '#c5f9d7',
+      highlights: [
+        'Automated financial document processing using AWS Textract and custom AI pipelines',
+        'Reduced manual effort by 70% through intelligent automation',
+        'Enabled secure, collaborative workflows for deal teams'
+      ]
+    },
+    {
+      id: 2,
+      title: 'Resolve-AI: Multi-Agent Bug Resolution System',
+      subtitle: 'AI-Powered Development Platform',
+      description: 'Engineered a multi-agent bug resolution system integrating Google Gemini and Claude SDKs, boosting issue resolution efficiency by 70% through automated analysis, code fixes, and PR generation.',
+      technologies: ['Node.js', 'AWS ECS', 'Claude SDK', 'Google Gemini', 'AWS SQS', 'JIRA', 'GitHub API'],
+      category: 'AI/ML',
+      icon: <IconBrain className="w-6 h-6" />,
+      color: '#f7d486',
+      highlights: [
+        'Deployed scalable agent workflows on AWS ECS with SQS orchestration',
+        'End-to-end bug handling from JIRA ticket ingestion (text, audio, video) to GitHub delivery',
+        'Boosted issue resolution efficiency by 70% through intelligent automation'
+      ]
+    },
+    {
+      id: 3,
       title: 'Autonomous AI Multi-Agent Failure Recovery',
       subtitle: 'Coursekey Platform',
       description: 'Orchestrated multiple Bedrock agents to autonomously analyze and fix transaction failures in a live payment system.',
       technologies: ['Python', 'AWS Bedrock', 'Lambda', 'Claude', 'JSON', 'Logs', 'SQL'],
       category: 'AI/ML',
       icon: <IconBrain className="w-6 h-6" />,
-      color: '#c5f9d7',
+      color: '#f27a7d',
       highlights: [
         'Auto-generated structured root cause JSONs and SQL recovery scripts',
         'Reduced manual debugging effort by 80%',
@@ -38,14 +68,14 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 2,
+      id: 4,
       title: 'Weather Wear AI',
       subtitle: 'Travel Intelligence Platform',
       description: 'Built AI-crafted travel alerts with weather + emergency insights using generative AI.',
       technologies: ['Node.js', 'AWS Lambda', 'Bedrock', 'SQS', 'Google FCM'],
       category: 'AI/ML',
       icon: <IconCloud className="w-6 h-6" />,
-      color: '#f7d486',
+      color: '#c5f9d7',
       highlights: [
         'Delivered push notifications a day before travel',
         'Increased user engagement by 30%',
@@ -53,14 +83,14 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 3,
+      id: 5,
       title: 'Tech Scraping AI',
       subtitle: 'Data Intelligence System',
       description: 'Enriched Excel contact data using Bedrock-powered AI and synced with Salesforce.',
       technologies: ['Python', 'AWS Bedrock', 'Apollo.io', 'Crunchbase', 'Salesforce'],
       category: 'AI/ML',
       icon: <IconDatabase className="w-6 h-6" />,
-      color: '#f27a7d',
+      color: '#f7d486',
       highlights: [
         'Delivered a Streamlit-based UI for validation and error correction',
         'Automated data enrichment and CRM synchronization',
@@ -68,14 +98,14 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 4,
+      id: 6,
       title: 'CourseKey + Anthology Integration',
       subtitle: 'Educational Platform',
       description: 'Designed bidirectional payment synchronization between platforms.',
       technologies: ['Node.js', 'React.js', 'AWS RDS', 'SQS', 'Lambda'],
       category: 'Integration',
       icon: <IconApi className="w-6 h-6" />,
-      color: '#c5f9d7',
+      color: '#f27a7d',
       highlights: [
         'Handled real-time consistency and error recovery workflows',
         'Seamless payment synchronization across platforms',
@@ -83,14 +113,14 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 5,
+      id: 7,
       title: 'Viapromeds Payment Platform',
       subtitle: 'Healthcare SaaS',
       description: 'Integrated secure PayPal checkout into a healthcare SaaS platform.',
       technologies: ['Node.js', 'PostgreSQL', 'PayPal API', 'AWS'],
       category: 'FinTech',
       icon: <IconRocket className="w-6 h-6" />,
-      color: '#f7d486',
+      color: '#c5f9d7',
       highlights: [
         'Scaled backend with AWS EC2/RDS and dynamic content via Contentful',
         'Secure payment processing with fraud detection',
@@ -98,7 +128,7 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 6,
+      id: 8,
       title: 'Westfield Airports Blog (URW)',
       subtitle: 'Content Management System',
       description: 'Developed a modern blog CMS for airports with integrated campaigns and dynamic content.',
@@ -113,14 +143,14 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 7,
+      id: 9,
       title: 'Epace Analyzer',
       subtitle: 'Performance Analytics',
       description: 'Automated employee performance review workflow with Python scripting.',
       technologies: ['Python', 'Google SDK', 'Google Sheets API'],
       category: 'Analytics',
       icon: <IconUsers className="w-6 h-6" />,
-      color: '#c5f9d7',
+      color: '#f7d486',
       highlights: [
         'Reduced processing time by 80% with Python scripting',
         'Automated report generation and analysis',
@@ -128,14 +158,14 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 8,
+      id: 10,
       title: 'RedCarpet HRMS',
       subtitle: 'Human Resource Management',
       description: 'Built internal HR tool with onboarding, offboarding, and Google Workspace auth.',
       technologies: ['React.js', 'Node.js', 'PostgreSQL'],
       category: 'Enterprise',
       icon: <IconUsers className="w-6 h-6" />,
-      color: '#f7d486',
+      color: '#c5f9d7',
       highlights: [
         'Software allocation and Google Workspace authentication',
         'Complete employee lifecycle management',
@@ -351,8 +381,8 @@ export default function ProjectsSection() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
-              { label: 'Projects Completed', value: '8+', icon: '🚀' },
-              { label: 'Technologies Used', value: '20+', icon: '⚡' },
+              { label: 'Projects Completed', value: '10+', icon: '🚀' },
+              { label: 'Technologies Used', value: '25+', icon: '⚡' },
               { label: 'Performance Improvement', value: '80%', icon: '📈' },
               { label: 'User Engagement Boost', value: '30%', icon: '👥' },
             ].map((stat, index) => (
